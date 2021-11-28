@@ -3,6 +3,7 @@ import IconButton from "../IconButton";
 import { HomeIcon, LockClosedIcon } from "@heroicons/react/solid";
 import { ChatIcon, CogIcon, XIcon, ClipboardCheckIcon, CollectionIcon } from "@heroicons/react/outline";
 import "../../FoodOrder/style.css"
+import { Link } from 'react-router-dom';
 
 
 function MainSideBarComponent(type) {
@@ -33,7 +34,9 @@ function MainSideBarComponent(type) {
             <IconButton icon={chatIcon} name={"Chat"} active={type.type === "Chat"} />
             <IconButton icon={cogIcon} name={"Settings"} active={type.type === "Settings"} />
           </div>
-          <IconButton icon={closeIcon} name={"Close"} active={false} />
+          <Link to="/">
+            <IconButton icon={closeIcon} name={"Close"} active={false} />
+          </Link>
         </div>
         </>
     )

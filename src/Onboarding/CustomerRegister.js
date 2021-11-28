@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import axios from '../axios';
 import "./styles.css"
 import {Redirect} from "react-router-dom"
+import RootBack from '../Components/RootBack';
 
 function CustomerRegister() {
 
@@ -49,7 +50,8 @@ function CustomerRegister() {
 
     return (
         <div className='h-screen flex w-screen justify-end bg-gray-100 overflow-hidden relative'>
-            <div className="ml-16">
+        <RootBack />    
+        <div className="ml-16">
                 <svg width="982" height="1200" viewBox="0 0 982 1200" fill="none" className="customer-shape">
                     <path d="M915 1206C915 1206 756 951 772 724C788 497 1002 561 980 228C980 228 967 62 899 2H0V1201L915 1206Z" fill="#FFDB6D"/>
                     <path d="M898 1203C898 1203 739 948 755 721C771 494 985 558 963 225C963 225 950 59 882 -1L0 2V1201L898 1203Z" fill="#F9F9F9"/>

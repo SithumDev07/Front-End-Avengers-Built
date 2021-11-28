@@ -9,7 +9,8 @@ import DashboardMainComponent from "./Components/Dashboard/DashboardMain.jsx"
 function App() {
   return (
     <Router>
-      <div className="App bg-red-500">
+
+      <div className="App">
         <Switch>
           <Route exact path="/">
             <Home />
