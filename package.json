@@ -22,11 +22,10 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "craco --openssl-legacy-provider start",
-    "build": "craco --openssl-legacy-provider build",
+    "start": "craco start",
+    "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject",
-    "build-css": "tailwindcss build src/index.css -o public/style.css"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
