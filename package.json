@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": ".",
+  "proxy" : "http://avengerscafebackend-env.eba-4k2yn9bw.us-east-2.elasticbeanstalk.com",
   "dependencies": {
     "@craco/craco": "^6.4.0",
     "@heroicons/react": "^1.0.5",
