@@ -1,48 +1,16 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import FoodComponent from "../Components/FoodComponent";
-import { HomeIcon, LockClosedIcon } from "@heroicons/react/solid";
-import { ChatIcon, CogIcon, XIcon } from "@heroicons/react/outline";
+import { LockClosedIcon } from "@heroicons/react/solid";
 import CartItem from "../Components/CartItem";
 import "./style.css";
 import CategoryComponent from "../Components/CategoryComponent";
-import { useState, useEffect } from "react/cjs/react.development";
 import axios from "../axios";
 import Modal from "react-modal";
-import { Form, Row, Col, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import {ACT_TYPE} from "../util/constans"
-import {Redirect} from "react-router-dom"
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import MainSideBarComponent from "../Components/MainSideBar/MainSideBar";
-import { Link } from 'react-router-dom'
-
-const DATA = [
-  {
-    id: 1,
-    image: process.env.PUBLIC_URL + `/images/item.png`,
-    name: "Bell Pepper Pizza",
-    price: "12.99",
-  },
-  {
-    id: 2,
-    image:
-      "https://www.kitchensanctuary.com/wp-content/uploads/2015/03/Fried-Rice-square-FS.jpg",
-    name: "Bell Pepper Pizza",
-    price: "12.99",
-  },
-  {
-    id: 3,
-    image: process.env.PUBLIC_URL + `/images/item.png`,
-    name: "Bell Pepper Pizza",
-    price: "12.99",
-  },
-  {
-    id: 4,
-    image: process.env.PUBLIC_URL + `/images/item.png`,
-    name: "Bell Pepper Pizza",
-    price: "12.99",
-  },
-];
 
 const CATEGORY_DATA = [
   {
@@ -73,8 +41,8 @@ const CATEGORY_DATA = [
 ];
 
 function FoodOrder() {
-  let subtitle;
-  const [picked, setPicked] = useState(false);
+  const picked = false;
+  // const [picked, setPicked] = useState(false);
   const [selectedCategoryId, setSelectedCategoryId] = useState(1);
   const [foodItems, setFoodItems] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -210,7 +178,7 @@ function FoodOrder() {
                 >
                   <CategoryComponent
                     key={element.id}
-                    active={selectedCategoryId == element.id}
+                    active={selectedCategoryId === element.id}
                     icon={element.icon}
                     title={element.title}
                   />
@@ -320,11 +288,13 @@ function FoodOrder() {
                 <div className="col-4 payment-method-properties">
                   <img
                     src={process.env.PUBLIC_URL + "/images/card_payment.png"}
+                    alt="food"
                   ></img>
                 </div>
                 <div className="col-4 payment-method-properties">
                   <img
                     src={process.env.PUBLIC_URL + "/images/cash_payment.png"}
+                    alt="food"
                   ></img>
                 </div>
               </div>

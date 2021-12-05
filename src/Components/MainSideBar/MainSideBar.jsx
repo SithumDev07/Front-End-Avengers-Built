@@ -1,6 +1,6 @@
 import React from 'react'
 import IconButton from "../IconButton";
-import { HomeIcon, LockClosedIcon } from "@heroicons/react/solid";
+import { HomeIcon } from "@heroicons/react/solid";
 import { ChatIcon, CogIcon, XIcon, ClipboardCheckIcon, CollectionIcon } from "@heroicons/react/outline";
 import "../../FoodOrder/style.css"
 import { Link } from 'react-router-dom';

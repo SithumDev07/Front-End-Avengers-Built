@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./OrderStyles.css";
 import Slider from "react-slick";
 import OrderCardComponent from "./OrderCardComponent";
-import { useState, useEffect } from "react/cjs/react.development";
 import axios from "../../../axios";
 
 function OrderComponent() {

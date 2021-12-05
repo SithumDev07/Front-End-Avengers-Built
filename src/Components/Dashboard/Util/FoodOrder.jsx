@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { useEffect, useState } from "react/cjs/react.development";
+import React, { useContext, useEffect, useState } from "react";
 import { FetchContext } from "../ContextManager";
 import axios from "../../../axios";
 import "./utilStyle.css";
@@ -14,7 +13,6 @@ export default function FoodOrderComponent() {
   const [orderDetails, setOrderDetails] = useState([]);
   const [loading, setLoading] = useState(true);
   const [customError, setCustomError] = useState(false);
-  // const [total, setTotal] = useState(0);
 
   useEffect(() => {
     async function fetchOrders() {

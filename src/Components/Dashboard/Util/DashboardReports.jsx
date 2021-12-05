@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ACT_TYPE } from "../../../util/constans"
-import { useState, useEffect } from "react/cjs/react.development";
 import axios from "../../../axios"
 
 export default function DashboardReports(reportType) {
@@ -74,7 +73,7 @@ export default function DashboardReports(reportType) {
       default:
         return getTotalRevenue();
     }
-    return () => { };
+    // return () => { };
   }, []);
 
   return (
