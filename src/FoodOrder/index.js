@@ -134,7 +134,7 @@ function FoodOrder() {
   }
 
   async function createOrder(){
-    await axios.post("/order/neworder",{
+    await axios.post("/api/v1/order/neworder",{
       actId: ACT_TYPE.PENDING,
       cusId : localStorage.getItem("cus_id"),
       totalPrice: parseFloat(billTotal*0.9),

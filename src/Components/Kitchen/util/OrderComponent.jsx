@@ -42,8 +42,8 @@ function OrderComponent() {
   }, []);
 
   const updateOrderCompleted = async (cusId) => {
-    await axios.put("/order/chefconfirm/" + cusId)
-      .then((response) => {
+    await axios.put("/api/v1/order/chefconfirm/" + cusId)
+      .then((response) => { 
         setSelectedCustomerId("");
         setOrdersList((data) => {
           let index = data.findIndex(Obj => Obj.cusID === cusId);

@@ -11,7 +11,7 @@ function Proceeds({userType}) {
     const [customError, setCustomError] = useState(false)
 
     async function UpdateHandler() {
-        await axios.put(`/order/cashierconfirm/${id}`, {
+        await axios.put(`/api/v1/order/cashierconfirm/${id}`, {
             
         })
             .then(response => {
