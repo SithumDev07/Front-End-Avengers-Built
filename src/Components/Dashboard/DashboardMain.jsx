@@ -25,6 +25,7 @@ function DashboardMainComponent() {
         <div className="box-border  bg-red-100 h-90 w-screen p-12 m-12 rounded-3xl">
           <div className="font-black pb-3 text-xl">Live Orders</div>
           <div className="row">
+            
             <div className="col h-15 w-15 rounded-2xl bg-white m-1">
               <DashboardReports reportType={ACT_TYPE.BILLD} />
             </div>
@@ -45,21 +46,16 @@ function DashboardMainComponent() {
           <FetchContext.Provider value={{ id, setId }}>
 
             <TotalContext.Provider value={{ total, setTotal }}>
-
-
               <div className="row">
                 <CustomerOrderTable />
               </div>
               <div className="row">
                 <FoodOrderComponent />
               </div>
-
             </TotalContext.Provider>
-
             <div className="justify-content-end mt-6 flex items-center">
               <Proceeds userType={userType} />
             </div>
-
           </FetchContext.Provider>
 
         </div>

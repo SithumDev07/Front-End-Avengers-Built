@@ -46,7 +46,7 @@ export default function CustomerOrderTable() {
   }
 
   const Orders = dailyOrders.map((item, index) =>
-    <tr key={item.cusId} className="bg-white border pt-5">
+    <tr key={item.cusId} className="bg-white border pt-5 text-lg">
       <td>{index + 1}</td>
       <td>{item.cname}</td>
       <td>{item.tableNum}</td>
@@ -65,7 +65,7 @@ export default function CustomerOrderTable() {
 
   return (
     <div className="">
-      <table className="table table-hover text-xl">
+      <table className="table table-hover text-lg text-center">
         <thead>
           <tr>
             <th scope="col">No</th>
