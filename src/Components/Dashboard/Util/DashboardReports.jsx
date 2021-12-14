@@ -77,12 +77,12 @@ export default function DashboardReports(reportType) {
   }, []);
 
   return (
-    <div className="grid grid-rows-3 grid-flow-col gap-3 p-2">
-      <div className="row-span-3 flex justify-center ">
+    <div className="grid grid-rows-1 grid-flow-col gap-x-0 gap-y-0 p-2">
+      <div className="row-span-2 flex justify-center w-12 h-12">
         <img src={params.icon} alt="report icon" />
       </div>
-      <div className="row-span-2 text-3xl font-bold font-serif col-span-2 text-center">{amount}</div>
-      <div className="col-span-2 text-center text-xl font-bold">{params.name}</div>
+      <div className="row-span-2  text-2xl font-bold font-serif col-span-2 text-center">{amount}</div>
+      <div className="col-span-2 text-center text-1xl font-bold">{params.name}</div>
     </div>
   );
 }
