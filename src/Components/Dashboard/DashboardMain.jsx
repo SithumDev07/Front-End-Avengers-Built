@@ -25,16 +25,16 @@ function DashboardMainComponent() {
         <div className="box-border  bg-red-100 h-90 w-screen p-12 m-12 rounded-3xl">
           <div className="font-black pb-3 text-xl">Live Orders</div>
           <div className="row">
-            <div className="col h-32 w-32 rounded-2xl bg-white m-1">
+            <div className="col h-15 w-15 rounded-2xl bg-white m-1">
               <DashboardReports reportType={ACT_TYPE.BILLD} />
             </div>
-            <div className="col h-32 w-32 rounded-2xl bg-white m-1">
+            <div className="col h-15 w-15 rounded-2xl bg-white m-1">
               <DashboardReports reportType={ACT_TYPE.PENDING} />
             </div>
-            <div className="col h-32 w-32 rounded-2xl bg-white m-1">
+            <div className="col h-15 w-15 rounded-2xl bg-white m-1">
               <DashboardReports reportType={ACT_TYPE.COMPLETED} />
             </div>
-            <div className="col h-32 w-32 rounded-2xl bg-white m-1">
+            <div className="col h-15 w-15 rounded-2xl bg-white m-1">
               <DashboardReports />
             </div>
           </div>
