@@ -15,8 +15,8 @@ function MainSideBarComponent(type) {
     const dashboardIcon = <CollectionIcon className={`w-14 h-14 block ${type.type === "Dashboard" ? "text-white" : "text-gray-500"}`} />;
     return (
         <>
-        <div className="w-1/12 flex flex-col items-center relative justify-between pb-10">
-          <div className="flex flex-col h-3/5 justify-around items-center">
+        <div className="w-1/12 flex flex-col items- relative justify-between pb-1">
+          <div className="flex flex-col h-3/5 justify-around items-end">
             <img
               src={process.env.PUBLIC_URL + `/images/logo.png`}
               alt="LOGO"

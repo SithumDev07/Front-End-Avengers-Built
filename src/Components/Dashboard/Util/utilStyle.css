@@ -9,6 +9,7 @@ thead, tbody {
     max-height: 40vh;
     overflow-y: auto;
     width: 100%;
+    height: 10%;
 }
 
 tbody td, thead th {
