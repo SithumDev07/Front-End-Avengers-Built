@@ -15,13 +15,15 @@ function MainSideBarComponent(type) {
     const dashboardIcon = <CollectionIcon className={`w-14 h-14 block ${type.type === "Dashboard" ? "text-white" : "text-gray-500"}`} />;
     return (
         <>
-        <div className="w-1/12 flex flex-col items- relative justify-between pb-1">
-          <div className="flex flex-col h-3/5 justify-around items-end">
-            <img
-              src={process.env.PUBLIC_URL + `/images/logo.png`}
-              alt="LOGO"
-              className="logo"
-            />
+        <div className="w-1/12 flex flex-col justify-between pb-1 fixed left-0 top-0 bottom-0 bg-gray-100">
+          <div className="flex flex-col h-3/4 justify-around items-center overflow-hidden">
+            <div className="w-20 h-20 overflow-hidden flex items-center justify-center border-2 mt-3 mb-6">
+              <img
+                src={process.env.PUBLIC_URL + `/images/logo.png`}
+                alt="LOGO"
+                className="logo object-contain"
+              />
+            </div>
             {(type.type === "Home") && (
               <IconButton icon={homeIcon} name={"Home"} active={true} />
             )} 
