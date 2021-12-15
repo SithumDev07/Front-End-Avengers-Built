@@ -19,7 +19,7 @@ function DashboardMainComponent() {
   const { userType } = useParams();
 
   return (
-    <div className="w-screen h-screen bg-gray-100 flex relative justify-end">
+    <div className="w-screen bg-gray-100 flex relative justify-end">
       <MainSideBarComponent type={"Dashboard"} />
       <OpenContext.Provider value={{ openTable, setOpenTable }}>
         <div className="box-border  bg-red-100 h-90 w-5/6 p-12 m-12 rounded-3xl">
