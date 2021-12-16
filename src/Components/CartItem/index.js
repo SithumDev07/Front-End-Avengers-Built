@@ -3,7 +3,7 @@ import "../FoodComponent/styles.css"
 
 function CartItem({image, name, quantity, price}) {
     return (
-        <div className="flex items-center mb-4">
+        <div className="flex items-center mb-4 pr-3">
             <div className="w-28 h-w-28 bg-yellow-mid rounded-full flex items-center justify-center">
                 <img className="category-image" src={image} alt="Item" />
             </div>
