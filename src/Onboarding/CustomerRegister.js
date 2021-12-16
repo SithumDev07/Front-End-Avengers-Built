@@ -49,14 +49,14 @@ function CustomerRegister() {
     }
 
     return (
-        <div className='h-screen flex w-screen justify-end bg-gray-100 overflow-hidden relative'>
+        <div className='h-auto flex w-screen justify-end bg-gray-100 overflow-hidden relative'>
         <RootBack />    
         <div className="ml-16">
                 <svg width="982" height="1200" viewBox="0 0 982 1200" fill="none" className="customer-shape">
                     <path d="M915 1206C915 1206 756 951 772 724C788 497 1002 561 980 228C980 228 967 62 899 2H0V1201L915 1206Z" fill="#FFDB6D"/>
                     <path d="M898 1203C898 1203 739 948 755 721C771 494 985 558 963 225C963 225 950 59 882 -1L0 2V1201L898 1203Z" fill="#F9F9F9"/>
                 </svg>
-                <div className="absolute left-24 top-20">
+                <div className="absolute left-24 top-20 overflow-y-scroll" style={{ height: '90vh' }}>
                     <h1 className="text-yellow-light text-3xl text-logo font-semibold">Avengers cafe</h1>
                     <div className="mt-10">
                         <h2 className="text-4xl font-semibold">Welcome Back!</h2>
