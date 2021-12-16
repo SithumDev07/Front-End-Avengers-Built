@@ -188,7 +188,7 @@ function FoodOrder() {
         </button>
 
 
-        <div className="py-6 px-5 w-5/6 bg-gray-100 absolute top-0 left-36">
+        <div className="py-6 px-5 w-3/4 bg-gray-100 absolute top-0 left-36">
           <div className="mb-5">
             <h1 className="text-4xl font-semibold text-gray-500">
               Menu Category
@@ -247,7 +247,7 @@ function FoodOrder() {
             </div>
           )}
         </div>
-        <div className="w-1/4 px-4 py-10 fixed top-0 right-0 bottom-0 bg-white transform translate-x-full transition duration-500" ref={cartRef}>
+        <div className="w-2/5 px-4 py-10 fixed top-0 right-0 bottom-0 bg-white transform translate-x-full transition duration-500" ref={cartRef}>
           <h1 className="text-2xl font-semibold mb-10">Order Menu</h1>
           {cartItems.length === 0 ? (
             <div className="flex items-start justify-center mt-14">
