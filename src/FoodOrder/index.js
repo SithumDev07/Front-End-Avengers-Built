@@ -288,11 +288,11 @@ function FoodOrder() {
                   <div className="px-3 mt-6">
                     <div className="flex text-2xl font-semibold text-gray-600">
                       <p className="flex-1">Sub Total</p>
-                      <p>${billTotal}</p>
+                      <p>Rs.{billTotal}</p>
                     </div>
                     <div className="flex text-2xl font-semibold text-gray-600 mt-2">
                       <p className="flex-1">Discount(10%)</p>
-                      <p>${billTotal * 0.1}</p>
+                      <p>Rs.{billTotal * 0.1}</p>
                     </div>
                   </div>
                 </>

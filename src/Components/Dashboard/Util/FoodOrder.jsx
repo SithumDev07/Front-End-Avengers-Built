@@ -62,8 +62,8 @@ export default function FoodOrderComponent() {
                 <td>{index + 1}</td>
                 <td>{item.fname}</td>
                 <td>{item.quantity}</td>
-                <td>${item.price}.00</td>
-                <td>${item.price * item.quantity}.00</td>
+                <td>Rs.{item.price}.00</td>
+                <td>Rs.{item.price * item.quantity}.00</td>
               </tr>
             )
           }
@@ -71,7 +71,7 @@ export default function FoodOrderComponent() {
       </table>
       <div className="row justify-content-end text-2xl mt-10">
         <label className="col-2 text-center">Total (10% Discount)</label>
-        <label className="col-4 text-center">${total}.00</label>
+        <label className="col-4 text-center">Rs.{total}.00</label>
       </div>
     </div>
   );
