@@ -290,7 +290,7 @@ function FoodOrder() {
             <div
               className={`${
                 cartItems.length === 0 ? "opacity-60" : "opacity-100"
-              } order-btn-properties absolute bottom-10 left-1/2 transform -translate-x-1/2 px-10 py-5 bg-pink text-white rounded-full flex items-center justify-center cursor-pointer`}
+              } order-btn-properties absolute bottom-10 left-1/2 transform -translate-x-1/2 px-4 py-3 bg-pink text-white rounded-full flex items-center justify-center cursor-pointer`}
             >
               <button
                 className="btn btn-block text-white"
@@ -301,8 +301,8 @@ function FoodOrder() {
                 {cartItems.length === 0 ? (
                   <LockClosedIcon className="w-10 h-10 text-gray-50 block" />
                 ) : (
-                  <p className="text-3xl font-semibold">
-                    Order ${billTotal - billTotal * 0.1}
+                  <p className="text-xl font-semibold">
+                    Order Rs.{billTotal - billTotal * 0.1}
                   </p>
                 )}
               </button>

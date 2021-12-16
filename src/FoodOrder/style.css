@@ -9,12 +9,12 @@
 }
 
 .cart-property{
-    max-height: 46vh;
+    max-height: 42vh;
     overflow-y: auto;
 }
 
 .order-btn-properties{
-    width: 60%;
+    /* width: 60%; */
     height: 10%;
 }
 
