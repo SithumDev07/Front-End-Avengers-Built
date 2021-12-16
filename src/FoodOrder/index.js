@@ -66,8 +66,11 @@ function FoodOrder() {
       bottom: "auto",
       marginRight: "-50%",
       borderRadius: "2rem",
-      width: "16vw",
+      width: "25vw",
       transform: "translate(-50%, -50%)",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center"
     },
   };
   const notify = () => 
@@ -354,16 +357,16 @@ function FoodOrder() {
           name={selectedElement.name}
           price={selectedElement.price}
         />
-        <div className="form-group row">
+        <div className="flex items-center">
           <label
             htmlFor="elementName"
-            className="col-sm-4 col-form-label font-size-12 align-text-left"
+            className="col-sm-4 col-form-label align-text-left text-xl"
           >
             Quantity
           </label>
-          <div className="col-sm-7">
+          <div className="ml-3">
             <input
-              className="form-control theam-textbox items-align-left"
+              className="form-control theam-textbox items-align-left px-3 py-2"
               type="number"
               id="elementName"
               onChange={(e) => {
@@ -374,7 +377,7 @@ function FoodOrder() {
         </div>
 
         <Button
-          className="bg-pink text-white rounded-full"
+          className="bg-pink text-white rounded-full px-4 py-3 mt-3 hover:bg-opacity-75"
           onClick={() => {
             setItemsCart(selectedElement, quantity);
           }}
