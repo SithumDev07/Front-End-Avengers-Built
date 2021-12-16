@@ -56,6 +56,8 @@ function FoodOrder() {
   const cartRef = useRef(null)
   const cartActivateRef = useRef(null)
 
+  const quantityCountRef = useRef(null)
+
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
   const customStyles = {
@@ -102,8 +104,16 @@ function FoodOrder() {
 
   useEffect(() => {
     getSelectedCategory(selectedCategoryId);
+    
     return () => {};
   }, []);
+
+  useEffect(() => {
+    if(quantityCountRef.current !== null && quantity < 1) {
+      quantityCountRef.current.disabled = true
+    }
+  }, [quantity])
+
   async function getSelectedCategory(selectedCategoryId) {
     await axios
       .get(`/api/customer/save/FoodMenu/FoodCategory/${selectedCategoryId}`)
@@ -148,7 +158,7 @@ function FoodOrder() {
       tableNum: 1
     }).then((response) => {
       setTimeout(() => {
-        window.location = "/customer-safety"
+        window.location = "#/customer-safety"
       }, 3000);
 
     })
@@ -350,6 +360,7 @@ function FoodOrder() {
         onRequestClose={handleClose}
         style={customStyles}
         contentLabel="Example Modal"
+        appElement={document.getElementById('root') || undefined}
       >
         <FoodComponent
           key={selectedElement.food_id}
@@ -377,7 +388,8 @@ function FoodOrder() {
         </div>
 
         <Button
-          className="bg-pink text-white rounded-full px-4 py-3 mt-3 hover:bg-opacity-75"
+          ref={quantityCountRef}
+          className="bg-pink text-white rounded-full px-4 py-3 mt-3 hover:bg-opacity-75 disabled:opacity-40"
           onClick={() => {
             setItemsCart(selectedElement, quantity);
           }}
