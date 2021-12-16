@@ -9,7 +9,8 @@ function Navigation() {
                     <Link to="/customer-safety" className="px-6 py-4 rounded-lg hover:text-gray-300 bg-pink mb-6">Customer Safety</Link>
                     {/* <Link to="/order" className="px-6 py-4 rounded-lg hover:text-gray-300 bg-pink mb-6">Order</Link> */}
                     <Link to="/kitchen" className="px-6 py-4 rounded-lg hover:text-gray-300 bg-pink mb-6">Kitchen</Link>
-                    <Link to="/dashboard/cashier" className="px-6 py-4 rounded-lg hover:text-gray-300 bg-pink">Dashboard</Link>
+                    <Link to="/dashboard/cashier" className="px-6 py-4 rounded-lg hover:text-gray-300 bg-pink mb-6">Cashier</Link>
+                    <Link to="/dashboard/manager" className="px-6 py-4 rounded-lg hover:text-gray-300 bg-pink">Manager</Link>
                 </div>
             </div>
         </div>
