@@ -25,7 +25,7 @@ export default function DashboardReports(reportType) {
         coutReports(ACT_TYPE.COMPLETED.toString());
         return setParams({ icon: process.env.PUBLIC_URL + `/images/dispatch.png`, name: "Dispatch", amount: amount, type: "completed" });
       default:
-        return setParams({ icon: process.env.PUBLIC_URL + `/images/Total.png`, name: "Total", amount: "300" });
+        return setParams({ icon: process.env.PUBLIC_URL + `/images/total.png`, name: "Total", amount: "300" });
     }
   }
 
