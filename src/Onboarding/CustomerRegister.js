@@ -85,8 +85,8 @@ function CustomerRegister() {
                     </div>
                 </div>
             </div>
-            <div className="h-screen flex justify-end bg-blue-400">
-                <img src={process.env.PUBLIC_URL + `/images/one.png`} alt="" className="w-full h-full object-contain" />
+            <div className="h-screen flex justify-end">
+                <img src={process.env.PUBLIC_URL + `/images/one.png`} alt="" className="w-full h-full object-cover" />
             </div>
         </div>
     )
